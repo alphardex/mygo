@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="将 Shadertoy 上的特效移植为桌面壁纸"><meta name="keywords" content=""><meta name="author" content="alphardex"><meta name="copyright" content="alphardex"><title>将 Shadertoy 上的特效移植为桌面壁纸 | 名無声</title><link rel="shortcut icon" href="/mygo/melody-favicon.ico"><link rel="stylesheet" href="/mygo/css/index.css?version=1.9.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.1"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css?version=1.9.1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://v1.hitokoto.cn/?encode=js&amp;charset=utf-8&amp;select=.footer_custom_text" defer></script><script>var GLOBAL_CONFIG = { 
+  root: '/mygo/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  hexoVersion: '7.2.0'
+} </script><meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/mygo/atom.xml" title="名無声" type="application/atom+xml">
+</head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%98%E8%B5%B7"><span class="toc-number">2.</span> <span class="toc-text">缘起</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E7%89%B9%E6%95%88"><span class="toc-number">3.</span> <span class="toc-text">准备特效</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A7%BB%E6%A4%8D%E6%A1%8C%E9%9D%A2%E5%A3%81%E7%BA%B8"><span class="toc-number">4.</span> <span class="toc-text">移植桌面壁纸</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8E%9F%E7%90%86"><span class="toc-number">5.</span> <span class="toc-text">原理</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%90%8E"><span class="toc-number">6.</span> <span class="toc-text">最后</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://s2.loli.net/2024/05/21/NhyV4THWaAgOwED.jpg"></div><div class="author-info__name text-center">alphardex</div><div class="author-info__description text-center">&quot;普通&quot;とか&quot;あたりまえ&quot;ってなんだろう</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/mygo/archives"><span class="pull-left">Articles</span><span class="pull-right">42</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://s2.loli.net/2024/05/21/HtNjkzv1FEdAVby.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/mygo/">名無声</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/mygo/">Home</a><a class="site-page" href="/mygo/archives">Archives</a><a class="site-page" href="/mygo/about">About</a></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title">将 Shadertoy 上的特效移植为桌面壁纸</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2022-06-19</time></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>大家好，这里是 CSS 兼 WebGL 魔法使——alphardex。本文就让我们来用<a target="_blank" rel="noopener" href="https://github.com/alphardex/kokomi.js">kokomi.js</a>的<a target="_blank" rel="noopener" href="https://github.com/alphardex/kokomi.js#shader-toy-tag">shadertoy 组件</a>将 Shadertoy 上的炫酷特效移植到我们的桌面上~</p>
+<p><img src="https://s2.loli.net/2022/06/19/gR7NwvcCIs6Ezfn.gif" alt="aurora.gif"></p>
+<span id="more"></span>
+
+<h2 id="缘起"><a href="#缘起" class="headerlink" title="缘起"></a>缘起</h2><p><a target="_blank" rel="noopener" href="https://www.shadertoy.com/">Shadertoy</a>是笔者经常逛的一个网站，上面有许多 CG 级别的炫酷特效，有一天，笔者突然萌生了一个想法：能否将这些特效移植到桌面上，作为动态壁纸来欣赏。</p>
+<p>恰好前阵子笔者正在进行<a target="_blank" rel="noopener" href="https://juejin.cn/post/7078578317053394975">kokomi.js</a>（一个 Web 3D 的辅助框架）的开发，里面有一个<a target="_blank" rel="noopener" href="https://github.com/alphardex/kokomi.js#screenquad">ScreenQuad</a>的组件，能渲染着色器代码的结果，再借助<a target="_blank" rel="noopener" href="https://developer.mozilla.org/zh-CN/docs/Web/Web_Components/Using_custom_elements">自定义组件</a>这一特性，笔者封装了一个<a target="_blank" rel="noopener" href="https://github.com/alphardex/kokomi.js#shader-toy-tag">shadertoy 的组件</a>，只要将片元着色器的代码复制进去，就能将着色器本身的代码给渲染出来，并且跟 Shadertoy 网站本身带来的效果几乎别无二致。</p>
+<h2 id="准备特效"><a href="#准备特效" class="headerlink" title="准备特效"></a>准备特效</h2><p>本地新建一个 html 文件，引入 kokomi.js，注册好 shadertoy 组件，清除页面的空白部分</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="language-css"></span></span><br><span class="line"><span class="language-css">  <span class="selector-tag">body</span> &#123;</span></span><br><span class="line"><span class="language-css">    <span class="attribute">margin</span>: <span class="number">0</span>;</span></span><br><span class="line"><span class="language-css">  &#125;</span></span><br><span class="line"><span class="language-css"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://unpkg.com/kokomi.js@1.9.21/build/kokomi.umd.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line">  kokomi.ShaderToyElement.register();</span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>接下来我们可以使用<code>&lt;shader-toy&gt;</code>这个标签了（放在<code>&lt;style&gt;</code>标签下面）</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">shader-toy</span>&gt;</span><span class="tag">&lt;/<span class="name">shader-toy</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>你会发现屏幕上出现了一个颜色变换的场景，其实这就是<a target="_blank" rel="noopener" href="https://www.shadertoy.com/new">shadertoy 官方的模板代码</a></p>
+<p>接下来我们可以开始往里面填充着色器特效了，以这个<a target="_blank" rel="noopener" href="https://www.shadertoy.com/view/XtGGRt">极光特效</a>为例，将右侧的着色器代码 CV 至<code>&lt;shader-toy&gt;</code>标签内的<code>&lt;script type=&#39;frag&#39;&gt;</code>标签内即可</p>
+<p>当然这里给个友善的小提醒：CV 完后记得标记出处，表示对原作者的尊重</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">shader-toy</span>&gt;</span></span><br><span class="line">  <span class="comment">&lt;!-- Credit: https://www.shadertoy.com/view/XtGGRt --&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;frag&quot;</span>&gt;</span></span><br><span class="line">    (将着色器代码CV于此)</span><br><span class="line">  <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">shader-toy</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>这样我们就能看见特效成功地被渲染出来了</p>
+<p><a target="_blank" rel="noopener" href="https://code.juejin.cn/pen/7110784867540926478">https://code.juejin.cn/pen/7110784867540926478</a></p>
+<p>PS：有的特效本身还带有材质，如果有的话就要添加 img 标签，将 name 设定为对应的材质名（如 iChannel0），加上 hidden 隐藏起来即可</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">&quot;./iChannel0.png&quot;</span> <span class="attr">name</span>=<span class="string">&quot;iChannel0&quot;</span> <span class="attr">hidden</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>如果想要更多的特效，可以移步<a target="_blank" rel="noopener" href="https://github.com/alphardex/shadertoy-wallpaper">这个仓库</a></p>
+<h2 id="移植桌面壁纸"><a href="#移植桌面壁纸" class="headerlink" title="移植桌面壁纸"></a>移植桌面壁纸</h2><p>笔者将使用<a target="_blank" rel="noopener" href="https://store.steampowered.com/app/431960/Wallpaper_Engine/">Wallpaper Engine</a>来完成接下来的操作，目前 windows 系统只有这个才能达到动态桌面的效果，暂时找不到别的替代品（如果有可以直接在下面回复），mac 或 linux 系统请自行寻找替代的解决方案（只要支持能用 html 作为桌面背景的软件就行）</p>
+<p>打开 WE，点击左下角的“壁纸编辑器”</p>
+<p><img src="https://s2.loli.net/2022/06/19/XCjrnmgIGJKyhkF.png" alt="1.png"></p>
+<p>这时会跳出一个“欢迎”的弹窗，点击“创建壁纸”</p>
+<p><img src="https://s2.loli.net/2022/06/19/E3pf5vYcH6rxwWk.png" alt="2.png"></p>
+<p>选择你之前准备好的特效的<code>html</code>文件，再点击“确认”</p>
+<p><img src="https://s2.loli.net/2022/06/19/cA3kxQGeXLSY6Ed.png" alt="3.png"></p>
+<p>点击左上角的“文件”，再点击“应用壁纸”，完成！</p>
+<p><img src="https://s2.loli.net/2022/06/19/bqdse6DWkSnzfxy.png" alt="4.png"></p>
+<p>最后的效果如下，还能鼠标交互哦</p>
+<p><img src="https://s3.bmp.ovh/imgs/2022/06/19/96a48e9fda2f7811.gif"></p>
+<h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>想了解 shadertoy 组件原理的可以直接移步<a target="_blank" rel="noopener" href="https://github.com/alphardex/kokomi.js/blob/main/src/web/shadertoy.ts">组件的源码</a>，本质上是做了这些事情：</p>
+<ol>
+<li>申明一个静态的注册方法，里面负责注册组件本身到页面上</li>
+<li>选择组件内部的<code>&lt;script type=&#39;frag&#39;&gt;</code>元素，获取其内容（着色器代码），用它来创建 ScreenQuad 组件</li>
+<li><a target="_blank" rel="noopener" href="https://github.com/alphardex/kokomi.js/blob/main/src/shapes/screenQuad.ts">ScreenQuad 组件</a>本质上是一个铺满屏幕的平面元素，里面内置了几乎所有 shadertoy 的 uniform 变量，并且能根据时间等要素进行渲染更新</li>
+</ol>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>桌面是不是有种焕然一新的感觉？</p>
+<p>Web 3D，永远超乎你的想象。</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">alphardex</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://alphardex.github.io/mygo/posts/11232/">https://alphardex.github.io/mygo/posts/11232/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"></div><nav id="pagination"><div class="prev-post pull-left"><a href="/mygo/posts/29621/"><i class="fa fa-chevron-left">  </i><span>用 kokomi.js 打造飘逸的 3D 轮播效果</span></a></div><div class="next-post pull-right"><a href="/mygo/posts/58379/"><span>用 raymarching 画一个精灵球</span><i class="fa fa-chevron-right"></i></a></div></nav><div id="vcomment"></div><script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = 'false' == 'true';
+var verify = 'false' == 'true';
+var record_ip = 'false' == 'true';
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  recordIP:record_ip,
+  appId:'MUKqiaU6CnxOn2VeT4cUBLdG-gzGzoHsz',
+  appKey:'nxePlNHUgdOaABmHUoWz4TpR',
+  placeholder:'何が言いたいことがある？',
+  avatar:'mm',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang: 'zh-cn'
+})</script></div></div><footer class="footer-bg" style="background-image: url(https://s2.loli.net/2024/05/21/HtNjkzv1FEdAVby.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2019 - 2024 By alphardex</div><div class="framework-info"><span>Driven - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="footer_custom_text">hitokoto</div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/mygo/js/utils.js?version=1.9.1"></script><script src="/mygo/js/fancybox.js?version=1.9.1"></script><script src="/mygo/js/sidebar.js?version=1.9.1"></script><script src="/mygo/js/copy.js?version=1.9.1"></script><script src="/mygo/js/fireworks.js?version=1.9.1"></script><script src="/mygo/js/transition.js?version=1.9.1"></script><script src="/mygo/js/scroll.js?version=1.9.1"></script><script src="/mygo/js/head.js?version=1.9.1"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script></body></html>
