@@ -13,7 +13,7 @@
 <p>上周末刚在原神里抽到了“火花骑士”可莉，于是就心血来潮，想用 three.js 来实现一种火系的特效，不是炸弹的爆炸，而是炸弹爆炸后在草上留下的火花效果</p>
 <p><img src="https://s2.loli.net/2024/05/22/T8uX6ZqyIec9GPd.jpg" alt="RBvmVJ.jpg"></p>
 <p>游戏里的效果相对比较卡通化，而本文的效果将更加逼近现实一点</p>
-<p><img src="https://s2.loli.net/2024/05/21/ZFatTGLpQom4jXb.gif"></p>
+<p><img src="https://s2.loli.net/2024/05/23/JRbsUDMTFGSyECm.gif"></p>
 <p>让我们开始吧！</p>
 <span id="more"></span>
 
@@ -47,7 +47,7 @@
 <h3 id="给火花加上颜色"><a href="#给火花加上颜色" class="headerlink" title="给火花加上颜色"></a>给火花加上颜色</h3><p>将颜色通过 mix 函数混合起来（强度是光线位置的 y 轴），和之前的颜色相乘即可</p>
 <figure class="highlight glsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> main()&#123;</span><br><span class="line">    ...</span><br><span class="line"></span><br><span class="line">    <span class="type">float</span> fireBody=result.y/<span class="number">64.</span>;</span><br><span class="line">    <span class="type">vec3</span> mixColor=<span class="built_in">mix</span>(uColor1,uColor2,fireBody);</span><br><span class="line">    color*=mixColor;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">gl_FragColor</span>=<span class="type">vec4</span>(color,<span class="number">1.</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p><img src="https://s2.loli.net/2024/05/21/ZFatTGLpQom4jXb.gif"></p>
+<p><img src="https://s2.loli.net/2024/05/23/JRbsUDMTFGSyECm.gif"></p>
 <h2 id="项目地址"><a href="#项目地址" class="headerlink" title="项目地址"></a>项目地址</h2><p><a target="_blank" rel="noopener" href="https://codepen.io/alphardex/pen/OJmPpeJ">Ray Marching Fire</a></p>
 </div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">alphardex</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://alphardex.github.io/mygo/posts/23735/">https://alphardex.github.io/mygo/posts/23735/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"></div><nav id="pagination"><div class="prev-post pull-left"><a href="/mygo/posts/38775/"><i class="fa fa-chevron-left">  </i><span>有趣的 CSS 数学函数</span></a></div><div class="next-post pull-right"><a href="/mygo/posts/34341/"><span>three.js 实现风暴云特效</span><i class="fa fa-chevron-right"></i></a></div></nav><div id="vcomment"></div><script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = 'false' == 'true';
 var verify = 'false' == 'true';
