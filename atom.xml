@@ -6,7 +6,7 @@
   <link href="https://alphardex.github.io/mygo/atom.xml" rel="self"/>
   
   <link href="https://alphardex.github.io/mygo/"/>
-  <updated>2024-05-21T12:46:14.140Z</updated>
+  <updated>2024-06-18T11:46:55.020Z</updated>
   <id>https://alphardex.github.io/mygo/</id>
   
   <author>
@@ -15,6 +15,22 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>将TUIKit从uni-app迁移到taro</title>
+    <link href="https://alphardex.github.io/mygo/posts/36637/"/>
+    <id>https://alphardex.github.io/mygo/posts/36637/</id>
+    <published>2024-06-18T09:15:10.000Z</published>
+    <updated>2024-06-18T11:46:55.020Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://cloud.tencent.com/document/product/269/64506&quot;&gt;TUIKit&lt;/a&gt;是腾讯的一个 IM 的 SDK，目前支持 H5、小程序、uni-app，但并没有对 Taro 的支持。&lt;/p&gt;
+&lt;p&gt;由于我的项目是基于 Taro 的，因此我先要把它 uni-app 的版本迁移到 Taro 上去。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>从零开始的 cosplay 之旅</title>
@@ -355,24 +371,6 @@
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;大家好，这里是 CSS 兼 WebGL 魔法使——alphardex。&lt;/p&gt;
 &lt;p&gt;最近开始玩起了 p5.js，发现这是一个很有意思的库，用它能创作出各种新奇有趣的特效，本文我们将一起来实现下图的鼠标移动特效。&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2024/05/21/Rrd2qoMWfPL1s3b.gif&quot;&gt;&lt;/p&gt;
-&lt;p&gt;让我们开始吧！&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>有趣的 CSS 数学函数</title>
-    <link href="https://alphardex.github.io/mygo/posts/38775/"/>
-    <id>https://alphardex.github.io/mygo/posts/38775/</id>
-    <published>2021-08-19T09:20:00.000Z</published>
-    <updated>2024-05-22T12:48:56.047Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;大家好，这里是 CSS 兼 WebGL 魔法使——alphardex。&lt;/p&gt;
-&lt;p&gt;之前一直在玩 three.js ，接触了很多数学函数，用它们创造过很多特效。于是我思考：能否在 CSS 中也用上这些数学函数，但发现 CSS 目前还没有，据说以后的新规范会纳入，估计也要等很久。&lt;/p&gt;
-&lt;p&gt;然而，我们可以通过一些小技巧，来创作出一些属于自己的 CSS 数学函数，从而实现一些有趣的动画效果。&lt;/p&gt;
 &lt;p&gt;让我们开始吧！&lt;/p&gt;</summary>
     
     
