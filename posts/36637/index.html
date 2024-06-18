@@ -14,6 +14,7 @@
 <span id="more"></span>
 
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><p>将<a target="_blank" rel="noopener" href="https://github.com/TencentCloud/chat-uikit-uniapp">chat-uikit-uniapp</a>克隆到本地，把里面原有的 .git 和 sample 删掉，自己初始化一个 git。</p>
+<p>当然，在初始化 git 之前，可以把项目名先改成<code>chat-uikit-taro</code>，毕竟 Taro 才是主体目标嘛。</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/TencentCloud/chat-uikit-uniapp.git</span><br><span class="line"><span class="built_in">cd</span> chat-uikit-uniapp</span><br><span class="line">rimraf .git</span><br><span class="line">rimraf sample</span><br><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;init&quot;</span></span><br></pre></td></tr></table></figure>
 
 <h2 id="修改库本身"><a href="#修改库本身" class="headerlink" title="修改库本身"></a>修改库本身</h2><h3 id="Taro"><a href="#Taro" class="headerlink" title="Taro"></a>Taro</h3><p>把所有<code>uni.</code>替换成<code>Taro.</code>，注意有些带有<code>-uni.png</code>的要手动排除掉。</p>
