@@ -6,7 +6,7 @@
   <link href="https://alphardex.github.io/mygo/atom.xml" rel="self"/>
   
   <link href="https://alphardex.github.io/mygo/"/>
-  <updated>2024-06-18T14:36:04.719Z</updated>
+  <updated>2024-06-18T14:40:25.294Z</updated>
   <id>https://alphardex.github.io/mygo/</id>
   
   <author>
@@ -21,10 +21,10 @@
     <link href="https://alphardex.github.io/mygo/posts/36637/"/>
     <id>https://alphardex.github.io/mygo/posts/36637/</id>
     <published>2024-06-18T09:15:10.000Z</published>
-    <updated>2024-06-18T14:36:04.719Z</updated>
+    <updated>2024-06-18T14:40:25.294Z</updated>
     
     
-    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://cloud.tencent.com/document/product/269/64506&quot;&gt;TUIKit&lt;/a&gt;是腾讯的一个基于 Chat SDK 的组件库，目前支持 H5、小程序、uni-app，但并没有对 Taro 的支持。&lt;/p&gt;
+    <summary type="html">&lt;p&gt;&lt;a href=&quot;https://cloud.tencent.com/document/product/269/64506&quot;&gt;TUIKit&lt;/a&gt;是腾讯的一个基于 Chat SDK 的 UI 组件库，目前支持 H5、小程序、uni-app，但并没有对 Taro 的支持。&lt;/p&gt;
 &lt;p&gt;由于我的项目是基于 Taro 的，因此我先要把它 uni-app 的版本迁移到 Taro 上去。&lt;/p&gt;</summary>
     
     
