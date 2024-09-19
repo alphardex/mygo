@@ -6,7 +6,7 @@
   <link href="https://alphardex.github.io/mygo/atom.xml" rel="self"/>
   
   <link href="https://alphardex.github.io/mygo/"/>
-  <updated>2024-06-26T01:31:34.613Z</updated>
+  <updated>2024-09-19T12:36:36.558Z</updated>
   <id>https://alphardex.github.io/mygo/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我的 MyGO!!!!!上海演唱会抢票历程</title>
+    <link href="https://alphardex.github.io/mygo/posts/59816/"/>
+    <id>https://alphardex.github.io/mygo/posts/59816/</id>
+    <published>2024-09-10T01:48:32.000Z</published>
+    <updated>2024-09-19T12:36:36.558Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;当我得知我喜欢的乐队 MyGO!!!!!将于上海开演唱会时，我内心十分激动。然而，票务代理却是臭名昭著的 EUPD，他们以放票少，官牛多而出名，让无数抢不到票的粉丝伤透了心。&lt;/p&gt;
+&lt;p&gt;当抢票信息公布后，我并不打算直接用手机去抢票，因为这样成功率实在是太低了，感觉就跟原神无保底单抽出金的概率差不多吧。&lt;/p&gt;
+&lt;p&gt;作为一个还算懂点技术的人，我决定利用我平时所学，打造出几个抢票利器，来助我一臂之力。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>将TUIKit从uni-app迁移到taro</title>
@@ -353,24 +370,6 @@
 &lt;p&gt;之前在练习写粒子特效的时候发现有些特效的实现跟物理知识有很大的关系（比如烟花特效），后来又碰巧发现了一本神书——&lt;a href=&quot;https://book.douban.com/subject/26264736/&quot;&gt;The Nature of Code&lt;/a&gt;，它教你如何运用物理数学知识来模拟实现一些自然界的特效，读完后我的创作之魂被彻底激发，于是就有了这篇文章，它将带你从零开始实现一个由物理驱动的粒子特效。&lt;/p&gt;
 &lt;p&gt;以下是最终实现的效果图&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2024/05/22/viNueEcoQnrbytV.gif&quot; alt=&quot;hTmZCt.gif&quot;&gt;&lt;/p&gt;
-&lt;p&gt;让我们开始吧！&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>p5.js 实现鼠标炫光残影移动效果</title>
-    <link href="https://alphardex.github.io/mygo/posts/54692/"/>
-    <id>https://alphardex.github.io/mygo/posts/54692/</id>
-    <published>2021-08-30T02:21:00.000Z</published>
-    <updated>2024-05-22T12:48:56.050Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;大家好，这里是 CSS 兼 WebGL 魔法使——alphardex。&lt;/p&gt;
-&lt;p&gt;最近开始玩起了 p5.js，发现这是一个很有意思的库，用它能创作出各种新奇有趣的特效，本文我们将一起来实现下图的鼠标移动特效。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2024/05/21/Rrd2qoMWfPL1s3b.gif&quot;&gt;&lt;/p&gt;
 &lt;p&gt;让我们开始吧！&lt;/p&gt;</summary>
     
     

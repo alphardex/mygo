@@ -1,0 +1,195 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="我的 MyGO!!!!!上海演唱会抢票历程"><meta name="keywords" content=""><meta name="author" content="alphardex"><meta name="copyright" content="alphardex"><title>我的 MyGO!!!!!上海演唱会抢票历程 | 名無声</title><link rel="shortcut icon" href="/mygo/img/favicon.ico"><link rel="stylesheet" href="/mygo/css/index.css?version=1.9.1"><link rel="stylesheet" href="/mygo/css/mygo.css?version=1.9.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.1"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css?version=1.9.1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://v1.hitokoto.cn/?encode=js&amp;charset=utf-8&amp;select=.footer_custom_text" defer></script><script>var GLOBAL_CONFIG = { 
+  root: '/mygo/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  hexoVersion: '7.2.0'
+} </script><meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/mygo/atom.xml" title="名無声" type="application/atom+xml">
+</head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E5%8C%96%E8%BF%9E%E7%82%B9%E5%99%A8"><span class="toc-number">1.</span> <span class="toc-text">自动化连点器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E5%8D%93%E7%8E%AF%E5%A2%83"><span class="toc-number">1.1.</span> <span class="toc-text">安卓环境</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E7%A8%8B%E5%BA%8F"><span class="toc-number">1.2.</span> <span class="toc-text">安装程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-number">1.3.</span> <span class="toc-text">准备工作</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%93%E5%BC%80%E6%97%A0%E9%9A%9C%E7%A2%8D%E6%9C%8D%E5%8A%A1"><span class="toc-number">1.3.1.</span> <span class="toc-text">打开无障碍服务</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%98%BE%E7%A4%BA%E6%8C%87%E9%92%88%E4%BD%8D%E7%BD%AE"><span class="toc-number">1.3.2.</span> <span class="toc-text">显示指针位置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%8B%BE%E5%8F%96%E6%8E%A7%E4%BB%B6%E4%BF%A1%E6%81%AF"><span class="toc-number">1.3.3.</span> <span class="toc-text">拾取控件信息</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E7%94%B5%E8%84%91"><span class="toc-number">1.3.4.</span> <span class="toc-text">连接电脑</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%86%99%E8%84%9A%E6%9C%AC%E4%BB%A3%E7%A0%81"><span class="toc-number">1.4.</span> <span class="toc-text">写脚本代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%94%B9%E5%8C%85%E6%8F%90%E5%89%8D%E8%BF%9B%E6%8A%A2%E7%A5%A8%E9%A1%B5"><span class="toc-number">2.</span> <span class="toc-text">改包提前进抢票页</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%93%E5%8C%85"><span class="toc-number">2.1.</span> <span class="toc-text">抓包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E5%86%99"><span class="toc-number">2.2.</span> <span class="toc-text">重写</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%91%E6%8E%A7%E5%9B%9E%E6%B5%81%E7%A5%A8"><span class="toc-number">3.</span> <span class="toc-text">监控回流票</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BF%9D%E6%8C%81%E8%84%9A%E6%9C%AC%E4%B8%8E%E6%8E%A5%E5%8F%A3%E5%90%8C%E6%AD%A5"><span class="toc-number">3.1.</span> <span class="toc-text">保持脚本与接口同步</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%A1%AE%E4%BF%9D%E6%89%80%E6%9C%89%E8%AE%BE%E5%A4%87%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5"><span class="toc-number">4.</span> <span class="toc-text">确保所有设备时间同步</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5%E7%94%B5%E8%84%91%E6%97%B6%E9%97%B4"><span class="toc-number">4.1.</span> <span class="toc-text">同步电脑时间</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%8C%E6%AD%A5%E6%89%8B%E6%9C%BA%E6%97%B6%E9%97%B4"><span class="toc-number">4.2.</span> <span class="toc-text">同步手机时间</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E4%B8%AA%E4%BA%BA%E7%9A%84%E6%8A%A2%E7%A5%A8%E7%BB%8F%E5%8E%86"><span class="toc-number">5.</span> <span class="toc-text">我个人的抢票经历</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9C%80%E5%90%8E"><span class="toc-number">6.</span> <span class="toc-text">最后</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://s2.loli.net/2024/05/21/NhyV4THWaAgOwED.jpg"></div><div class="author-info__name text-center">alphardex</div><div class="author-info__description text-center">&quot;普通&quot;とか&quot;あたりまえ&quot;ってなんだろう</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/mygo/archives"><span class="pull-left">Articles</span><span class="pull-right">44</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://s2.loli.net/2024/05/21/HtNjkzv1FEdAVby.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/mygo/">名無声</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/mygo/">Home</a><a class="site-page" href="/mygo/archives">Archives</a><a class="site-page" href="/mygo/about">About</a></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title">我的 MyGO!!!!!上海演唱会抢票历程</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2024-09-10</time></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><p>当我得知我喜欢的乐队 MyGO!!!!!将于上海开演唱会时，我内心十分激动。然而，票务代理却是臭名昭著的 EUPD，他们以放票少，官牛多而出名，让无数抢不到票的粉丝伤透了心。</p>
+<p>当抢票信息公布后，我并不打算直接用手机去抢票，因为这样成功率实在是太低了，感觉就跟原神无保底单抽出金的概率差不多吧。</p>
+<p>作为一个还算懂点技术的人，我决定利用我平时所学，打造出几个抢票利器，来助我一臂之力。</p>
+<span id="more"></span>
+
+<h2 id="自动化连点器"><a href="#自动化连点器" class="headerlink" title="自动化连点器"></a>自动化连点器</h2><p>抢票开始时，我们一般都会拼了命地去点击抢票界面上的按钮。</p>
+<p>但是呢，人点击按钮，是会有时间差的，你无法保证在开票时正正好好地点到按钮，总是会有个几十毫秒的误差，连点亦是如此，你 1 秒钟连点按钮的次数一般最多不会超过 10 次。尽管这对于一般的演唱会来说不算什么，但对于那种特别火热的演唱会，错过几毫秒，错过几次连点可能也会让你痛失机会。</p>
+<p>是不是感觉自己太弱小了？</p>
+<p>DIO 曾说过：人是有极限的，正因如此才要超越人类！</p>
+<p><img src="https://s2.loli.net/2024/09/10/MfJGbuc9CdL1aYe.jpg" alt="Jojoios-4.jpg"></p>
+<p>那我们如何在现实中获得这般“超越人类”的力量呢？答案是程序。</p>
+<p>我们人做动作基本都是以秒为单位来计算的，然而，对于程序的运行速度来说，基本都是以毫秒为单位计算的，秒和毫秒可是相差了足足 1000 倍。</p>
+<p>知道了这一点，那我们就可以让程序来帮我们连点，不仅能在操作速度上有巨大的提高，而且程序自带的定时器可比我们自己估算的时间要准的多，基本可以消灭开抢时时间上的误差。</p>
+<p>接下来，我们将使用<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/">AutoX.js</a>这个强大的程序来实现我们的抢票大业，注意这个程序目前来说只有安卓版的，并没有其他环境（如 ios）的版本。</p>
+<h3 id="安卓环境"><a href="#安卓环境" class="headerlink" title="安卓环境"></a>安卓环境</h3><p>首先，你需要一个安卓手机，用来提供程序运行所需要的环境。</p>
+<p>有的人会说：emmmm 我是苹果机啊，总不见得为了抢票特地去买个安卓机吧？</p>
+<p>没有安卓机怎么办？也行！我们可以下一个安卓模拟器，在电脑上就可以运行。模拟器的话个人推荐用网易的<a target="_blank" rel="noopener" href="https://mumu.163.com/">mumu 模拟器</a>。</p>
+<h3 id="安装程序"><a href="#安装程序" class="headerlink" title="安装程序"></a>安装程序</h3><p><code>AutoX.js</code>的 apk 可以在 Github 的<a target="_blank" rel="noopener" href="https://github.com/kkevsekk1/AutoX/releases/tag/6.6.7">Releases 页</a>下载到。</p>
+<p>对于手机而言，可以把 apk 先打包成压缩包，然后通过一些平台（如微信）进行传输，再下个解压缩的软件，解压缩后即可进行安装。</p>
+<p>模拟器就简单了，直接把 apk 拖上去，就可以安装。</p>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><p>安装完成后，我们直接进入 AutoX.js 这个软件。</p>
+<h4 id="打开无障碍服务"><a href="#打开无障碍服务" class="headerlink" title="打开无障碍服务"></a>打开无障碍服务</h4><p>点击左上角的三道杠。</p>
+<p><img src="https://s2.loli.net/2024/09/10/dVQgYmbJAOMyz5B.jpg" alt="Snipaste_2024-09-10_14-18-47.jpg"></p>
+<p>找到“无障碍服务”，将它后面的开关打开，它会弹出一个提示，按提示去设置里打开应用的无障碍选项就行了。</p>
+<p><img src="https://s2.loli.net/2024/09/10/3Lv79pWeNoYM4Dh.jpg" alt="Snipaste_2024-09-10_14-20-10.jpg"></p>
+<h4 id="显示指针位置"><a href="#显示指针位置" class="headerlink" title="显示指针位置"></a>显示指针位置</h4><p>我们写程序时，有时需要知道我们目前的手指点在手机的哪个位置。</p>
+<p>找到“系统应用-设置-关于手机”，最底下有个版本号，连点几下，直到它提示你进入了开发者模式，就 OK 了。</p>
+<p><img src="https://s2.loli.net/2024/09/10/sSTQ2NfYwbE47gZ.jpg" alt="Snipaste_2024-09-10_14-25-08.jpg"></p>
+<p>然后，我们回到“设置-系统”，里面会有一个“开发者选项”，进去，找到“指针位置”，打开它。（上面有个“显示点按操作反馈”建议也打开下）</p>
+<p><img src="https://s2.loli.net/2024/09/10/BQzu93NCAnOg2Js.jpg" alt="Snipaste_2024-09-10_14-30-28.jpg"></p>
+<p>你会发现画面上方多了一些数据，其中 dX 和 dY 就是指针位置的数据了，当我们点击手机或模拟器上的一个位置时，它们的值会跟着改变。</p>
+<h4 id="拾取控件信息"><a href="#拾取控件信息" class="headerlink" title="拾取控件信息"></a>拾取控件信息</h4><p>当我们浏览和操作 app 时，会接触 app 的很多元素（如点击按钮等），这些都是 app 的控件。</p>
+<p>想在脚本里操作 app 的控件的话，往往需要知道控件所包含的信息才能选中并操作它，最直观的是它所包含的文字。</p>
+<p>除了文字外，我们还可以通过工具来拾取它的控件名称等信息。</p>
+<p>回到 AutoX.js 软件，点击左上角的三道杠。</p>
+<p><img src="https://s2.loli.net/2024/09/10/dVQgYmbJAOMyz5B.jpg" alt="Snipaste_2024-09-10_14-18-47.jpg"></p>
+<p>找到“悬浮窗”，将它后面的开关打开。（如果有询问权限的话直接打开权限开关）</p>
+<p><img src="https://s2.loli.net/2024/09/10/C6tDLlYavAIuBPc.jpg" alt="Snipaste_2024-09-10_14-56-46.jpg"></p>
+<p>这样我们就能在画面左侧发现一个悬浮菜单，点击菜单，它会自动展开，再点击它的第三个按钮。</p>
+<p><img src="https://s2.loli.net/2024/09/10/knbK678VDaPsClm.jpg" alt="Snipaste_2024-09-10_14-58-15.jpg"></p>
+<p>会出现一个弹窗，选择“布局范围分析”。</p>
+<p><img src="https://s2.loli.net/2024/09/10/XD3xYqluA2fTbpR.jpg" alt="Snipaste_2024-09-10_14-59-51.jpg"></p>
+<p>然后它会把整个页面的结构都显示得清清楚楚。</p>
+<p><img src="https://s2.loli.net/2024/09/11/nehALaN5VcCOrP9.jpg" alt="Snipaste_2024-09-11_15-23-22"></p>
+<p>点击最下面的“缺货登记”按钮，再点击“查看控件信息”，我们就能看到这个按钮的所有控件信息了。</p>
+<p><img src="https://s2.loli.net/2024/09/11/4pdOYcVIrqKfsiL.jpg" alt="Snipaste_2024-09-11_15-27-03"></p>
+<p>AutoX.js 甚至还贴心地准备了一个自动生成代码的功能，再次点击按钮，选择“自动生成代码”，它就能直接生成供脚本使用的代码，而且各种场合都考虑到了。</p>
+<p>我们试试生成这个脚本：找到“缺货登记”按钮并点击它。</p>
+<p><img src="https://s2.loli.net/2024/09/11/Ggby4PLwK8tFexu.jpg" alt="Snipaste_2024-09-11_15-31-45.jpg"></p>
+<p>生成的代码如下：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="title function_">className</span>(<span class="string">&quot;android.widget.TextView&quot;</span>).<span class="title function_">text</span>(<span class="string">&quot;缺货登记&quot;</span>).<span class="title function_">findOne</span>().<span class="title function_">click</span>();</span><br></pre></td></tr></table></figure>
+
+<h4 id="连接电脑"><a href="#连接电脑" class="headerlink" title="连接电脑"></a>连接电脑</h4><p>我们先在自己的编辑器里安装一个扩展，以 vscode 为例，扩展名叫“Auto.js-Autox.js-VSCodeExt”，安装好后是这样的：</p>
+<p><img src="https://s2.loli.net/2024/09/11/Z2fFK7aOt5bL43r.jpg" alt="Snipaste_2024-09-11_16-06-55"></p>
+<p>按下“Ctrl+Shift+P”快捷键，搜索 autoxjs，找到“开启服务”这个命令并点击它：</p>
+<p><img src="https://s2.loli.net/2024/09/11/rbyXaPLw1VzlA2p.jpg" alt="Snipaste_2024-09-11_16-09-39"></p>
+<p>画面右下角会显示连接的服务器地址：</p>
+<p><img src="https://s2.loli.net/2024/09/11/iyglZKn1tU2hzGM.jpg" alt="Snipaste_2024-09-11_16-10-55"></p>
+<p>回到 AutoX.js 软件，点击左上角的三道杠。</p>
+<p><img src="https://s2.loli.net/2024/09/10/dVQgYmbJAOMyz5B.jpg" alt="Snipaste_2024-09-10_14-18-47.jpg"></p>
+<p>找到“连接电脑”，将它后面的开关打开。</p>
+<p><img src="https://s2.loli.net/2024/09/11/ikvanVXsd15OKc2.jpg" alt="Snipaste_2024-09-11_16-01-47"></p>
+<p>它会提示你输入服务器地址，就输入刚刚右下角弹出来的服务器地址，再加一个<code>ws://</code>的前缀，因为服务器用的是<code>WebSocket</code>来连接的，输完后点击“确定”按钮，即可完成连接。</p>
+<p><img src="https://s2.loli.net/2024/09/11/QujsoiGq27FI1lY.jpg" alt="Snipaste_2024-09-11_16-13-43"></p>
+<blockquote>
+<p>注意：我用的是模拟器，可以直接连接，如果用真机的话，可能会有风控应用禁止连接，目前还没想到用什么办法来解决。</p>
+</blockquote>
+<h3 id="写脚本代码"><a href="#写脚本代码" class="headerlink" title="写脚本代码"></a>写脚本代码</h3><p>所有的准备工作完成后，我们总算可以着手开始写代码了。</p>
+<p>写代码前，建议先通读下 AutoX.js 的<a target="_blank" rel="noopener" href="http://doc.autoxjs.com/#/">官方文档</a>，了解它常用的 API 函数。</p>
+<p>我们先大致理一下脚本所要做的逻辑：抢票开始前一直等待，当购票按钮出现时立刻点击它进入选票页面，然后在选票页面拼命地点“确认”按钮，直到“立即支付”按钮出现后，我们就算进入了最后一个关卡——确认支付页，这里就不停地点“立即支付”按钮就可以了。如果抢票人数过多，就可能会跳出“前方拥堵”的提示，我们再创建一个子线程，用来专门点掉这个提示的“刷新”按钮。</p>
+<blockquote>
+<p>我写的脚本一定程度上参考了这个：<a target="_blank" rel="noopener" href="https://github.com/Pactum7/ticket-grabbing/blob/main/MaoYan/MaoYanGoNew.js">https://github.com/Pactum7/ticket-grabbing/blob/main/MaoYan/MaoYanGoNew.js</a></p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 检查无障碍服务是否已经启用，如果没有启用则跳转到无障碍服务启用界面，并等待无障碍服务启动；当无障碍服务启动后脚本会继续运行。</span></span><br><span class="line">auto.<span class="title function_">waitFor</span>();</span><br><span class="line"><span class="comment">//打开猫眼app</span></span><br><span class="line">app.<span class="title function_">launchApp</span>(<span class="string">&quot;猫眼&quot;</span>);</span><br><span class="line"><span class="title function_">openConsole</span>();</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">setTitle</span>(<span class="string">&quot;猫眼 go!&quot;</span>, <span class="string">&quot;#ff11ee00&quot;</span>, <span class="number">30</span>);</span><br><span class="line"></span><br><span class="line"><span class="comment">//确认选票坐标，建议配置（不配置时仍会寻找“确认”按钮进行点击，但可能会出现点击失败的情况）</span></span><br><span class="line"><span class="keyword">const</span> <span class="title class_">ConfirmX</span> = <span class="number">734</span>;</span><br><span class="line"><span class="keyword">const</span> <span class="title class_">ConfirmY</span> = <span class="number">1532</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">//是否已进入订单页，如果进了前面的逻辑都不用管，直接一直点支付按钮就完事了</span></span><br><span class="line"><span class="keyword">const</span> havEnterOrderPage = <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line"><span class="title function_">main</span>();</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">main</span>(<span class="params"></span>) &#123;</span><br><span class="line">  <span class="comment">//注意：抢票前，观演人别忘了自己提前预约下</span></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;开始猫眼抢票!&quot;</span>);</span><br><span class="line"></span><br><span class="line">  <span class="keyword">if</span> (!havEnterOrderPage) &#123;</span><br><span class="line">    <span class="comment">//出现刷新按钮时点击刷新</span></span><br><span class="line">    threads.<span class="title function_">start</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">      <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;刷新按钮自动点击线程已启动&quot;</span>);</span><br><span class="line">      <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">        <span class="title function_">textContains</span>(<span class="string">&quot;刷新&quot;</span>).<span class="title function_">waitFor</span>();</span><br><span class="line">        <span class="title function_">textContains</span>(<span class="string">&quot;刷新&quot;</span>).<span class="title function_">findOne</span>().<span class="title function_">click</span>();</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;点击刷新...&quot;</span>);</span><br><span class="line">        <span class="comment">//避免点击过快</span></span><br><span class="line">        <span class="title function_">sleep</span>(<span class="number">100</span>);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;);</span><br><span class="line"></span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;等待开抢...&quot;</span>);</span><br><span class="line">    <span class="keyword">while</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">      <span class="comment">//购票按钮有多种显示情况，都要考虑到</span></span><br><span class="line">      <span class="keyword">var</span> but1 = <span class="title function_">textContains</span>(<span class="string">&quot;立即预订&quot;</span>).<span class="title function_">exists</span>();</span><br><span class="line">      <span class="keyword">var</span> but2 = <span class="title function_">textContains</span>(<span class="string">&quot;立即购票&quot;</span>).<span class="title function_">exists</span>();</span><br><span class="line">      <span class="keyword">var</span> but3 = <span class="title function_">textContains</span>(<span class="string">&quot;特惠购票&quot;</span>).<span class="title function_">exists</span>();</span><br><span class="line">      <span class="keyword">var</span> but4 = <span class="title function_">textContains</span>(<span class="string">&quot;特惠预订&quot;</span>).<span class="title function_">exists</span>();</span><br><span class="line">      <span class="keyword">var</span> result = but1 || but2 || but3 || but4;</span><br><span class="line">      <span class="keyword">if</span> (result) &#123;</span><br><span class="line">        <span class="keyword">var</span> s;</span><br><span class="line">        <span class="keyword">if</span> (but1) &#123;</span><br><span class="line">          <span class="keyword">var</span> s = <span class="title function_">textContains</span>(<span class="string">&quot;立即预订&quot;</span>).<span class="title function_">findOne</span>().<span class="title function_">click</span>();</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (but2) &#123;</span><br><span class="line">          <span class="keyword">var</span> s = <span class="title function_">textContains</span>(<span class="string">&quot;立即购票&quot;</span>).<span class="title function_">findOne</span>().<span class="title function_">click</span>();</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (but3) &#123;</span><br><span class="line">          <span class="keyword">var</span> s = <span class="title function_">textContains</span>(<span class="string">&quot;特惠购票&quot;</span>).<span class="title function_">findOne</span>().<span class="title function_">click</span>();</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span> (but4) &#123;</span><br><span class="line">          <span class="keyword">var</span> s = <span class="title function_">textContains</span>(<span class="string">&quot;特惠预订&quot;</span>).<span class="title function_">findOne</span>().<span class="title function_">click</span>();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;①准备确认购票&quot;</span>);</span><br><span class="line"></span><br><span class="line">    <span class="comment">//猛点，一直点到出现支付按钮为止</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">let</span> cnt = <span class="number">0</span>; cnt &gt;= <span class="number">0</span>; cnt++) &#123;</span><br><span class="line">      <span class="comment">//绝对坐标点击</span></span><br><span class="line">      <span class="title function_">click</span>(<span class="title class_">ConfirmX</span>, <span class="title class_">ConfirmY</span>);</span><br><span class="line">      <span class="comment">//文字查找按钮点击，避免未正确配置坐标导致的点击失败</span></span><br><span class="line">      <span class="keyword">if</span> (<span class="title function_">text</span>(<span class="string">&quot;确认&quot;</span>).<span class="title function_">exists</span>()) &#123;</span><br><span class="line">        <span class="title function_">text</span>(<span class="string">&quot;确认&quot;</span>).<span class="title function_">click</span>();</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="title function_">sleep</span>(<span class="number">50</span>);</span><br><span class="line">      <span class="keyword">if</span> (<span class="title function_">classNameStartsWith</span>(<span class="string">&quot;android.widget.&quot;</span>).<span class="title function_">text</span>(<span class="string">&quot;立即支付&quot;</span>).<span class="title function_">exists</span>()) &#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;支付按钮出现&quot;</span>);</span><br><span class="line">        <span class="keyword">break</span>;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">if</span> (cnt % <span class="number">20</span> == <span class="number">0</span>) &#123;</span><br><span class="line">        <span class="title function_">log</span>(<span class="string">&quot;已点击确认次数：&quot;</span> + cnt);</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;②准备确认支付&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="comment">// 开冲!!!</span></span><br><span class="line">  <span class="keyword">for</span> (</span><br><span class="line">    <span class="keyword">let</span> cnt = <span class="number">0</span>;</span><br><span class="line">    <span class="title function_">classNameStartsWith</span>(<span class="string">&quot;android.widget.&quot;</span>).<span class="title function_">text</span>(<span class="string">&quot;立即支付&quot;</span>).<span class="title function_">exists</span>();</span><br><span class="line">    cnt++</span><br><span class="line">  ) &#123;</span><br><span class="line">    <span class="comment">//直接猛点就完事了</span></span><br><span class="line">    <span class="keyword">var</span> c = <span class="title function_">classNameStartsWith</span>(<span class="string">&quot;android.widget.&quot;</span>)</span><br><span class="line">      .<span class="title function_">text</span>(<span class="string">&quot;立即支付&quot;</span>)</span><br><span class="line">      .<span class="title function_">findOne</span>()</span><br><span class="line">      .<span class="title function_">click</span>();</span><br><span class="line">    <span class="keyword">var</span> sleepTime = havEnterOrderPage</span><br><span class="line">      ? <span class="number">400</span> + <span class="title class_">Math</span>.<span class="title function_">floor</span>(<span class="title class_">Math</span>.<span class="title function_">random</span>() * <span class="number">250</span>)</span><br><span class="line">      : <span class="number">50</span>;</span><br><span class="line">    <span class="title function_">sleep</span>(sleepTime);</span><br><span class="line">    <span class="keyword">if</span> (cnt % <span class="number">20</span> == <span class="number">0</span>) &#123;</span><br><span class="line">      <span class="title function_">log</span>(<span class="string">&quot;已点击支付次数：&quot;</span> + cnt);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;结束&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>写好脚本后，我们就可以点击右上角的运行按钮，来运行这个脚本了。</p>
+<p><img src="https://s2.loli.net/2024/09/11/RLSIJAkTnctWaEs.jpg" alt="Snipaste_2024-09-11_16-29-22"></p>
+<blockquote>
+<p>注意：在运行脚本前，你需要提前登录好，并且填完所有预约信息，再进入演出页面启动，才能让脚本正常地运行。</p>
+</blockquote>
+<blockquote>
+<p>还有一点：像猫眼这类 app，是会不停地更新换代的，可能过了一段时间后，app 的 UI 界面会发生一定的变化，那么你之前写好的脚本就可能会失灵！这时你就要重新开始拾取新界面上的控件数据，调整点击的坐标，修改你的脚本代码了。</p>
+</blockquote>
+<h2 id="改包提前进抢票页"><a href="#改包提前进抢票页" class="headerlink" title="改包提前进抢票页"></a>改包提前进抢票页</h2><p>在抢票开始之前，界面是长这个样的：</p>
+<p><img src="https://s2.loli.net/2024/09/11/ZIUcKmM9i4A1RWQ.png" alt="IMG_6012"></p>
+<p>你点击下方的“已预约”按钮，只会进入预选择票档页，而不会进入正式的选票页，因为开票时间还没到嘛。</p>
+<p>那么有没有一种办法，来“欺骗” app 以为已经到了开票时间，而显示出购票按钮呢？答案是有的。</p>
+<p>我用的是 iphone，就以 ios 系统为例吧。</p>
+<p>进入 App Store，搜索“Storm Sniffer”，安装这个 app，它的图标是一只“小螃蟹”，下文也这么称呼它。</p>
+<p><img src="https://s2.loli.net/2024/09/11/7nucaQ56VszitOp.jpg" alt="IMG_6028"></p>
+<p>它的完整功能需要付费 18 元，我是觉得为了抢票这点小钱也无所谓了，当然如果你不愿意付费的话，可以直接跳过这一部分~</p>
+<p>解锁小螃蟹后，我们会重点使用它的“抓包”和“重写”功能。</p>
+<p>我们先要开启 MITM，用来解密 app 的 HTTPS 流量，这个只要根据它的说明一步步做就行，开启后，我们就可以开始抓包了。</p>
+<h3 id="抓包"><a href="#抓包" class="headerlink" title="抓包"></a>抓包</h3><p>小螃蟹里打开抓包开关，再点“启动”按钮。</p>
+<p>我们在 app 上找一个已经开票的演唱会，进入页面，等页面加载完毕后，再回到小螃蟹，点击“停止”按钮。</p>
+<p>点击抓包的“历史记录”，我们就能看到抓到的所有的包了。</p>
+<p>找到演出详情的包，它的链接里包含“&#x2F;my&#x2F;odea&#x2F;project&#x2F;detail”，查看它的响应数据。</p>
+<p><img src="https://s2.loli.net/2024/09/12/oOsDZeAUz1LSNHd.png" alt="IMG_6031"></p>
+<p>然后进一个还没开票的演唱会，重复上面的步骤。</p>
+<p><img src="https://s2.loli.net/2024/09/12/LvmuHqbVzEowye5.jpg" alt="IMG_6034"></p>
+<p>将两者对比下，我们就能发现跟按钮显示相关的 2 个数据不一样：<code>saleStatus</code>和<code>ticketStatus</code>，未开票时，两者的值都是 1，开票后，两者的值变成了 3。</p>
+<h3 id="重写"><a href="#重写" class="headerlink" title="重写"></a>重写</h3><p>我们的目的，就是要把未开票的界面变成已开票的界面。</p>
+<p>从上面可以得知，为了做到这一点，我们可以把包里的数据进行“重写”，比如<code>saleStatus</code>原本是 1 的，将它改写为 3，不就行了吗。</p>
+<p>回到小螃蟹，点击“重写规则”，再点击右上角的加号，即可添加新的规则。</p>
+<p><img src="https://s2.loli.net/2024/09/12/TyplksFc5vNa19G.jpg" alt="IMG_6036"></p>
+<p>以上则是我个人的规则，主要就是对特定链接的响应进行文本替换。</p>
+<p>添加完成后，我们返回规则列表，勾选好我们新增的规则，再返回主界面，打开重写开关，启动小螃蟹。</p>
+<p>回到上次未开票的那个演出，我们就会惊讶地发现它的按钮真的变成了已开票时的按钮“立即购票”！</p>
+<p><img src="https://s2.loli.net/2024/09/12/6upNAK9aoBkxGU2.jpg" alt="IMG_6037"></p>
+<p>不过呢，先别高兴的太早。我们点击购票按钮后，尽管会跳转到购票界面，但它会显示出这个结果：</p>
+<p><img src="https://s2.loli.net/2024/09/12/guot4fkyAaRHqPS.png" alt="IMG_6038"></p>
+<p>啊嘞？不是已经骗过了 app 吗？怎么它还会提示这个？</p>
+<p>nonono，其实进入购票页面时，app 还是会请求购票的数据，刚刚我们修改的仅仅是演出的数据，跟它是两码事，由于演出实际上未开始，购票的数据肯定也会返回未开票时的数据，到这里重写就暂时无能为力了。</p>
+<p>话虽如此，但我们已经可以比其他人提前进购票页面了不是吗？</p>
+<p>只要抓准时机，在开票前的 1 秒内提前点“立即购票”按钮，我们就能提前几百毫秒进入购票页。可别小看这点时间，在抢票面前，时间就是金钱！</p>
+<p>那么如何把握住时间呢？我们需要一个精确到 0.1 秒的悬浮时钟，App Store 上搜索“ZK 助手”并安装它。</p>
+<p>打开“ZK 助手”，点击“开启画中画”按钮。</p>
+<blockquote>
+<p>如果你是 iPhone14Pro 以上的机型，也可以打开“显示到灵动岛”这个开关。</p>
+</blockquote>
+<p><img src="https://s2.loli.net/2024/09/12/XaFvdAJPr7xUhCD.jpg" alt="IMG_6041"></p>
+<p>返回 app，你就能看到悬浮时钟已经出现在某个角落了，同时小螃蟹开着的话，下方的按钮也是“立即购票”。</p>
+<p><img src="https://s2.loli.net/2024/09/12/zpOvQ5KEY9e7Dr4.jpg" alt="IMG_6042"></p>
+<p>当抢票即将开始前，你就可以等时钟走到最后 1 秒的某一刻，点击“立即购票”按钮，比别人抢先进入购票页了。</p>
+<blockquote>
+<p>注意万万不能提前点，否则会出现“演出信息发生变化”的提示，返回会拖延几秒时间，直接导致你的抢票 GG。</p>
+</blockquote>
+<p>但就算提前进了，也不排除有人也会用这招，因此不能松懈，战斗才刚刚开始！</p>
+<h2 id="监控回流票"><a href="#监控回流票" class="headerlink" title="监控回流票"></a>监控回流票</h2><p>当你完成抢票这场激烈的战斗后，你可能赢了，也可能输了。</p>
+<p>技术，只能大大提高你成功的概率，然而，并不能确保你百分百能抢到你想要的票。</p>
+<p>倘若票秒空了，你依旧没能抢到票，不要放弃，因为可能还会有回流票。</p>
+<p>也不排除回流票很快就被其他人抢掉的情况，这时就得看你的运气了。</p>
+<p>运气好，你就能蹲到并抢到回流票；运气不好，你和回流票会不停地失之交臂。</p>
+<p>不论结果如何，你得知道啥时候有回流票。</p>
+<p>我在网上找了个 python 写的回流票监控脚本，地址：<a target="_blank" rel="noopener" href="https://github.com/ThinkerWen/TicketMonitoring">https://github.com/ThinkerWen/TicketMonitoring</a></p>
+<p>用起来也很简单，你只需在 config.json 中配置好演出的 id（可通过 app 抓包获得）、名称、平台（猫眼是 1）以及监控截止时间，就能直接运行脚本进行监控了。</p>
+<p><img src="https://s2.loli.net/2024/09/11/fetLWYvJSnplGKu.jpg" alt="Snipaste_2024-09-11_17-13-56"></p>
+<p>如果你想在有票的时候收到手机上的通知，你需要再装一个发通知的 app，App Store 上搜索 Bark 并安装它。</p>
+<p><img src="https://s2.loli.net/2024/09/12/mr37Gz1XBh5py2j.jpg" alt="IMG_6043"></p>
+<p>打开 Bark app 后，将链接<code>https://api.day.app/</code>后面的一串代码复制到电脑上，替换掉 Monitor.py 的”BARK_PUSH_KEY”，再开启脚本，就能在检测到回流票的时候给手机发通知了。</p>
+<h3 id="保持脚本与接口同步"><a href="#保持脚本与接口同步" class="headerlink" title="保持脚本与接口同步"></a>保持脚本与接口同步</h3><p>实在不巧，我找的回流脚本其实已经失灵了，因为猫眼已经更新了演出的相关接口，当我得知这一点后顿时感觉之前都白监控了。</p>
+<p>既然如此，就只好把脚本也更新一下了，让它和新接口相同步。</p>
+<p><img src="https://s2.loli.net/2024/09/16/SjyvfQYrtiwOB3m.jpg" alt="Snipaste_2024-09-16_11-01-58"></p>
+<h2 id="确保所有设备时间同步"><a href="#确保所有设备时间同步" class="headerlink" title="确保所有设备时间同步"></a>确保所有设备时间同步</h2><p>有一个很容易被忽视的一个点：所有抢票设备的时间是否和当前的时间同步？</p>
+<p>如果同步，OK 没什么问题。</p>
+<p>如果不同步，我们要手动同步一下最新的时间。</p>
+<h3 id="同步电脑时间"><a href="#同步电脑时间" class="headerlink" title="同步电脑时间"></a>同步电脑时间</h3><p>以 win10 系统为例，打开“设置-时间与语言”，点击“同步时钟”，即可完成同步。</p>
+<p><img src="https://s2.loli.net/2024/09/14/RgbNzwrZ4l7Bh6X.jpg" alt="Snipaste_2024-09-14_20-44-47"></p>
+<p>然后再重启下模拟器，看下抢票底部的倒计时是否跟手机一致，一致的话就表明同步成功了。</p>
+<h3 id="同步手机时间"><a href="#同步手机时间" class="headerlink" title="同步手机时间"></a>同步手机时间</h3><p>手机上，我们通过 ZK 助手来看时间的，但这个 app 的时间往往会跟实际的时间有一定的误差，只要对比下电脑就可以得知。</p>
+<p>我们可以把时间源锁定在“北京时间”。</p>
+<p><img src="https://s2.loli.net/2024/09/14/HMy7W6dIwaXP3AK.jpg" alt="IMG_6055"></p>
+<h2 id="我个人的抢票经历"><a href="#我个人的抢票经历" class="headerlink" title="我个人的抢票经历"></a>我个人的抢票经历</h2><p>如你所见，我用了上文写到的所有技术，来抢 MyGO!!!!!的这次 live。</p>
+<p>第一轮，我很有自信，直接瞄准 1380 档，结果令我万万没想到的是这一档竟然是最先被抢完的，而且 1 秒钟都不到，我的脚本和小螃蟹全都被卡在了支付页，提示“库存不足”。</p>
+<p>第二轮，我决定退一步，选择少难（？）一点的 1180 档，为了确保抢到甚至还找了个代抢，结果还是梅开二度，我和代抢双双阵亡……</p>
+<p>第三轮，就放几张票，有抢到的可能吗？别想了。</p>
+<p>至于回流票？说实话我都没意识到当时用的是过时的监控脚本，直到两轮都抢完后才发现，唉。</p>
+<p>花了这么大的功夫抢票，最终依旧是一场空。错的不是我，是扣弄塞该哒！</p>
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>祝愿大家都能抢到自己想抢的票，就算没抢到，也绝不要向黄牛屈服！</p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">alphardex</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://alphardex.github.io/mygo/posts/59816/">https://alphardex.github.io/mygo/posts/59816/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"></div><div class="social-share pull-right"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script><nav id="pagination"><div class="next-post pull-right"><a href="/mygo/posts/36637/"><span>将TUIKit从uni-app迁移到taro</span><i class="fa fa-chevron-right"></i></a></div></nav><div id="vcomment"></div><script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = 'false' == 'true';
+var verify = 'false' == 'true';
+var record_ip = 'false' == 'true';
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  recordIP:record_ip,
+  appId:'MUKqiaU6CnxOn2VeT4cUBLdG-gzGzoHsz',
+  appKey:'nxePlNHUgdOaABmHUoWz4TpR',
+  placeholder:'何が言いたいことがある？',
+  avatar:'mm',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang: 'zh-cn'
+})</script></div></div><footer class="footer-bg" style="background-image: url(https://s2.loli.net/2024/05/21/HtNjkzv1FEdAVby.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2019 - 2024 By alphardex</div><div class="framework-info"><span>Driven - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="footer_custom_text">hitokoto</div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/mygo/js/utils.js?version=1.9.1"></script><script src="/mygo/js/fancybox.js?version=1.9.1"></script><script src="/mygo/js/sidebar.js?version=1.9.1"></script><script src="/mygo/js/copy.js?version=1.9.1"></script><script src="/mygo/js/fireworks.js?version=1.9.1"></script><script src="/mygo/js/transition.js?version=1.9.1"></script><script src="/mygo/js/scroll.js?version=1.9.1"></script><script src="/mygo/js/head.js?version=1.9.1"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script></body></html>
