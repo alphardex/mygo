@@ -6,7 +6,7 @@
   <link href="https://alphardex.github.io/mygo/atom.xml" rel="self"/>
   
   <link href="https://alphardex.github.io/mygo/"/>
-  <updated>2025-02-23T12:36:52.255Z</updated>
+  <updated>2025-09-01T07:16:59.809Z</updated>
   <id>https://alphardex.github.io/mygo/</id>
   
   <author>
@@ -19,6 +19,22 @@
     <feedId>70027878673944576</feedId>
     <userId>56524146701268992</userId>
   </follow_challenge>
+  
+  <entry>
+    <title>现代 Web 的视觉组件探索</title>
+    <link href="https://alphardex.github.io/mygo/posts/57824/"/>
+    <id>https://alphardex.github.io/mygo/posts/57824/</id>
+    <published>2025-08-28T08:26:46.000Z</published>
+    <updated>2025-09-01T07:16:59.809Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;这里是 alphardex。&lt;/p&gt;
+&lt;p&gt;在现代 Web 开发中，我们常常利用特定的 HTML 标签来呈现不同形式的视觉内容：&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;用于图片，&lt;code&gt;&amp;lt;video&amp;gt;&lt;/code&gt;用于视频。但除此之外，你知道 Web 上还能展示哪些视觉元素吗？本文将带你探索 Web 世界中的多样化视觉组件，从内容展示到炫酷特效，一览现代 Web 的视觉表现力。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>Roselia 上海演唱会 Repo</title>
@@ -355,23 +371,6 @@
     
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;大家好，这里是 CSS 兼 WebGL 魔法使——alphardex。本文就让我们来用&lt;a href=&quot;https://github.com/alphardex/kokomi.js&quot;&gt;kokomi.js&lt;/a&gt;的&lt;a href=&quot;https://github.com/alphardex/kokomi.js#shader-toy-tag&quot;&gt;shadertoy 组件&lt;/a&gt;将 Shadertoy 上的炫酷特效移植到我们的桌面上~&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2022/06/19/gR7NwvcCIs6Ezfn.gif&quot; alt=&quot;aurora.gif&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>用 raymarching 画一个精灵球</title>
-    <link href="https://alphardex.github.io/mygo/posts/58379/"/>
-    <id>https://alphardex.github.io/mygo/posts/58379/</id>
-    <published>2022-04-13T07:46:00.000Z</published>
-    <updated>2024-05-22T12:48:56.067Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;大家好，这里是 CSS 兼 WebGL 魔法使——alphardex。本文就让我们来用&lt;a href=&quot;https://github.com/alphardex/kokomi.js&quot;&gt;kokomi.js&lt;/a&gt;的&lt;a href=&quot;https://github.com/alphardex/marcher.js&quot;&gt;raymarching 组件&lt;/a&gt;来画一个精灵球吧~&lt;/p&gt;
-&lt;p&gt;泼给莫，给托打贼！&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2024/05/22/Pk2d4hmnUBCeFSj.gif&quot; alt=&quot;LKobMF.gif&quot;&gt;&lt;/p&gt;</summary>
     
     
     
