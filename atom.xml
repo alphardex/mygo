@@ -6,7 +6,7 @@
   <link href="https://alphardex.github.io/mygo/atom.xml" rel="self"/>
   
   <link href="https://alphardex.github.io/mygo/"/>
-  <updated>2025-09-01T07:16:59.809Z</updated>
+  <updated>2025-12-31T06:02:52.204Z</updated>
   <id>https://alphardex.github.io/mygo/</id>
   
   <author>
@@ -19,6 +19,23 @@
     <feedId>70027878673944576</feedId>
     <userId>56524146701268992</userId>
   </follow_challenge>
+  
+  <entry>
+    <title>一个普通魔法师的 2025 年度总结</title>
+    <link href="https://alphardex.github.io/mygo/posts/21230/"/>
+    <id>https://alphardex.github.io/mygo/posts/21230/</id>
+    <published>2025-12-09T04:49:35.000Z</published>
+    <updated>2025-12-31T06:02:52.204Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2025/12/31/edyuobzgDOiw651.jpg&quot; alt=&quot;banner&quot;&gt;&lt;/p&gt;
+&lt;p&gt;这里是 alphardex。&lt;/p&gt;
+&lt;p&gt;不知不觉，一年过去了，又到了总结的时候。&lt;/p&gt;</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>现代 Web 的视觉组件探索</title>
@@ -355,22 +372,6 @@
     <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;大家好，这里是 CSS 兼 WebGL 魔法使——alphardex。本文就让我们来用&lt;a href=&quot;https://github.com/alphardex/kokomi.js&quot;&gt;kokomi.js&lt;/a&gt;实现一个飘逸的 3D 轮播效果。&lt;/p&gt;
 &lt;p&gt;（以下 demo 点开全屏观看效果最佳）&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://code.juejin.cn/pen/7141175290247512068&quot;&gt;https://code.juejin.cn/pen/7141175290247512068&lt;/a&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>将 Shadertoy 上的特效移植为桌面壁纸</title>
-    <link href="https://alphardex.github.io/mygo/posts/11232/"/>
-    <id>https://alphardex.github.io/mygo/posts/11232/</id>
-    <published>2022-06-19T03:23:00.000Z</published>
-    <updated>2024-05-21T12:46:15.165Z</updated>
-    
-    
-    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;大家好，这里是 CSS 兼 WebGL 魔法使——alphardex。本文就让我们来用&lt;a href=&quot;https://github.com/alphardex/kokomi.js&quot;&gt;kokomi.js&lt;/a&gt;的&lt;a href=&quot;https://github.com/alphardex/kokomi.js#shader-toy-tag&quot;&gt;shadertoy 组件&lt;/a&gt;将 Shadertoy 上的炫酷特效移植到我们的桌面上~&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2022/06/19/gR7NwvcCIs6Ezfn.gif&quot; alt=&quot;aurora.gif&quot;&gt;&lt;/p&gt;</summary>
     
     
     
