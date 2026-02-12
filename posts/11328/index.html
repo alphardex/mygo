@@ -1,0 +1,141 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="description" content="和 Gemini 一起，把一个像素 ACT 游戏 Demo 从 0 做出来"><meta name="keywords" content=""><meta name="author" content="alphardex"><meta name="copyright" content="alphardex"><title>和 Gemini 一起，把一个像素 ACT 游戏 Demo 从 0 做出来 | 名無声</title><link rel="shortcut icon" href="/mygo/img/favicon.ico"><link rel="stylesheet" href="/mygo/css/index.css?version=1.9.1"><link rel="stylesheet" href="/mygo/css/mygo.css?version=1.9.1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css?version=1.9.1"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css?version=1.9.1"><meta name="format-detection" content="telephone=no"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://v1.hitokoto.cn/?encode=js&amp;charset=utf-8&amp;select=.footer_custom_text" defer></script><script>var GLOBAL_CONFIG = { 
+  root: '/mygo/',
+  algolia: undefined,
+  localSearch: undefined,
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  hexoVersion: '7.2.0'
+} </script><meta name="generator" content="Hexo 7.2.0"><link rel="alternate" href="/mygo/atom.xml" title="名無声" type="application/atom+xml">
+</head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div id="sidebar" data-display="true"><div class="toggle-sidebar-info text-center"><span data-toggle="Toggle article">Toggle site</span><hr></div><div class="sidebar-toc"><div class="sidebar-toc__title">Catalog</div><div class="sidebar-toc__progress"><span class="progress-notice">You've read</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%BC%98%E8%B5%B7%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%B8%80%E7%9B%B4%E6%83%B3%E5%81%9A%E4%B8%80%E4%B8%AA%E6%B8%B8%E6%88%8F"><span class="toc-number">1.</span> <span class="toc-text">缘起：为什么我一直想做一个游戏</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E9%80%89%E6%8B%A9-Phaser-%E4%BD%9C%E4%B8%BA%E6%B8%B8%E6%88%8F%E5%BC%95%E6%93%8E"><span class="toc-number">2.</span> <span class="toc-text">我为什么选择 Phaser 作为游戏引擎</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%82%82%E9%80%85-Gemini%EF%BC%9A%E4%B8%8D%E6%98%AF%E8%BD%AE%E6%A4%85%EF%BC%8C%E8%80%8C%E6%98%AF%E6%8B%90%E6%9D%96"><span class="toc-number">3.</span> <span class="toc-text">邂逅 Gemini：不是轮椅，而是拐杖</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B4%A0%E6%9D%90%EF%BC%8C%E6%98%AF%E5%A6%82%E4%BD%95%E4%B8%80%E7%82%B9%E4%B8%80%E7%82%B9%E7%82%BC%E6%88%90%E7%9A%84"><span class="toc-number">4.</span> <span class="toc-text">素材，是如何一点一点炼成的</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%BA%E7%89%A9%E5%92%8C%E8%83%8C%E6%99%AF"><span class="toc-number">4.1.</span> <span class="toc-text">人物和背景</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8A%A8%E4%BD%9C%E5%B8%A7%EF%BC%9A%E5%8F%8D%E5%A4%8D%E8%B8%A9%E5%9D%91%E7%9A%84%E8%A1%80%E6%B3%AA%E5%8F%B2"><span class="toc-number">4.2.</span> <span class="toc-text">动作帧：反复踩坑的血泪史</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E4%B8%8D%E6%98%AF%E6%9C%80%E9%9A%BE%E7%9A%84%EF%BC%8C%E5%86%B3%E5%AE%9A%E6%89%8D%E6%98%AF"><span class="toc-number">5.</span> <span class="toc-text">代码不是最难的，决定才是</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%93-Demo-%E7%BB%88%E4%BA%8E%E8%A2%AB%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83%E4%BA%86"><span class="toc-number">6.</span> <span class="toc-text">当 Demo 终于被正式发布了</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E7%BB%AD"><span class="toc-number">7.</span> <span class="toc-text">后续</span></a></li></ol></div></div><div class="author-info hide"><div class="author-info__avatar text-center"><img src="https://s2.loli.net/2024/05/21/NhyV4THWaAgOwED.jpg"></div><div class="author-info__name text-center">alphardex</div><div class="author-info__description text-center">&quot;普通&quot;とか&quot;あたりまえ&quot;ってなんだろう</div><hr><div class="author-info-articles"><a class="author-info-articles__archives article-meta" href="/mygo/archives"><span class="pull-left">Articles</span><span class="pull-right">50</span></a></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://s2.loli.net/2024/05/21/HtNjkzv1FEdAVby.jpg)"><div id="page-header"><span class="pull-left"> <a id="site-name" href="/mygo/">名無声</a></span><i class="fa fa-bars toggle-menu pull-right" aria-hidden="true"></i><span class="pull-right menus">   <a class="site-page" href="/mygo/">Home</a><a class="site-page" href="/mygo/archives">Archives</a><a class="site-page" href="/mygo/about">About</a></span><span class="pull-right"></span></div><div id="post-info"><div id="post-title">和 Gemini 一起，把一个像素 ACT 游戏 Demo 从 0 做出来</div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 2026-01-26</time></div></div></div><div class="layout" id="content-inner"><article id="post"><div class="article-container" id="post-content"><h2 id="缘起：为什么我一直想做一个游戏"><a href="#缘起：为什么我一直想做一个游戏" class="headerlink" title="缘起：为什么我一直想做一个游戏"></a>缘起：为什么我一直想做一个游戏</h2><p>小时候，我上过很多诸如 4399、7k7k 等小游戏网站，接触过了很多 Flash 小游戏，那些游戏现在回看，技术并不复杂，美术也谈不上精致，但它们都有个共同点：</p>
+<p><strong>你能明显感觉到，这是“某一个人”做出来的东西。</strong></p>
+<p>长大后，我开始玩上了 Steam 平台上的游戏，接触到了诸如《Rabi-Ribi》、以及它的续作《TEVI》这类横板 ACT 作品，这种感觉再次被放大了。</p>
+<p>横板 ACT 的战斗密度、Boss 的弹幕节奏、游戏本身的表达性，让我第一次意识到：</p>
+<p><strong>ACT 不只是操作游戏，也是一种叙事方式。</strong></p>
+<p>而另一条线，则来自于我长期接触的二次元内容。</p>
+<p>就拿我喜欢的 BanG Dream!!、PJSK 这类企划来举例，它们本身并不是“游戏性导向”，但它们作品中的角色、剧情、情绪、世界观，一直让我觉得：</p>
+<p><strong>如果用另一种形式去承载，可能会很有意思。</strong></p>
+<p>这几条线慢慢地交汇在一起，我开始有了一个很模糊、但一直挥之不去的念头：</p>
+<p><strong>我也想创造一个“我自己会想反复打开”的游戏世界。</strong></p>
+<span id="more"></span>
+
+<h2 id="我为什么选择-Phaser-作为游戏引擎"><a href="#我为什么选择-Phaser-作为游戏引擎" class="headerlink" title="我为什么选择 Phaser 作为游戏引擎"></a>我为什么选择 Phaser 作为游戏引擎</h2><p>其实我并不是不知道 Unity、Godot 这类成熟的游戏引擎。</p>
+<p>但我很清楚一件事：</p>
+<p><strong>我不是全职的游戏开发者，我是一个前端。</strong></p>
+<p>我更习惯：</p>
+<ul>
+<li>快速看到结果，所见即所得</li>
+<li>直接调试渲染与逻辑</li>
+<li>用代码去试错，而不是不停地去学习引擎本身的用法</li>
+</ul>
+<p>所以，我选择了 Phaser ，而且版本选的是最新的 Phaser 4 的 RC 6 版本（据官方内部消息说这几周内会正式发布 Phaser 4）。</p>
+<p>原因也很简单：我之前对 Shader 有点研究，而这个版本对自定义 Shader 的支持更自由。</p>
+<p>这是一个并不稳妥，甚至有点“逆主流”的选择，但它非常符合我的性格。</p>
+<h2 id="邂逅-Gemini：不是轮椅，而是拐杖"><a href="#邂逅-Gemini：不是轮椅，而是拐杖" class="headerlink" title="邂逅 Gemini：不是轮椅，而是拐杖"></a>邂逅 Gemini：不是轮椅，而是拐杖</h2><p>真正让我敢启动这个项目的，是 Gemini 。</p>
+<p>大概在 2025 年年底吧，我订阅了 Gemini ，发现了它的 Nano Banana Pro 模型拥有强大的图片生成能力，尤其是在风格理解和补全方面，非常强。</p>
+<p>我不会画画，这一点我并不回避。</p>
+<p>Gemini 并没有“帮我解决美术”，而是让我第一次敢正视这个短板。</p>
+<p>很重要的一点是：</p>
+<p><strong>AI 并不会直接给你成品。</strong></p>
+<p>它给你的，是大量的“也许可以”的结果，而真正费时的，是：</p>
+<ul>
+<li>否定</li>
+<li>重来</li>
+<li>筛选</li>
+<li>再调整</li>
+</ul>
+<p>当时我还没意识到，这种“不断做选择”的状态，会在 Demo 发布后，以另一种形式出现。</p>
+<h2 id="素材，是如何一点一点炼成的"><a href="#素材，是如何一点一点炼成的" class="headerlink" title="素材，是如何一点一点炼成的"></a>素材，是如何一点一点炼成的</h2><p>之前我发的 Demo 试玩帖子里，有很多人在问：我那些角色图片素材是怎么来的。</p>
+<p>实话是：<strong>没有任何一个是现成的。</strong></p>
+<h3 id="人物和背景"><a href="#人物和背景" class="headerlink" title="人物和背景"></a>人物和背景</h3><p>人物静态素材，是在参考原作角色 Q 版形象的基础上，结合了横板 ACT 的构图需求（3&#x2F;4侧视图），一次次生成、调整、淘汰，最终筛选出来的结果。</p>
+<p>背景也是同理，也是通过参考游戏里无人世界的氛围，再不断逼近我脑子里的感觉得来的。</p>
+<p>我并不回避“参考”这件事，但我回避的是<strong>不理解的拙略模仿</strong>。</p>
+<p>我很清楚自己在借力，但目标始终是：</p>
+<p><strong>服务于我想要的节奏和情绪。</strong></p>
+<h3 id="动作帧：反复踩坑的血泪史"><a href="#动作帧：反复踩坑的血泪史" class="headerlink" title="动作帧：反复踩坑的血泪史"></a>动作帧：反复踩坑的血泪史</h3><p>动作帧可以说是整个过程中最折磨人的部分了。</p>
+<p>我试过：</p>
+<ul>
+<li>用 Nano Banana Pro 根据参考图直出动作帧（不自然、缺乏一致性）</li>
+<li>Pixellab 的 Character Creator （尝试了很多次，风格很容易失控）</li>
+<li>Pixellab 的 animate with text（效果好，但成本有点高）</li>
+<li>其他 AI 序列帧生成平台（不支持 3&#x2F;4 侧式视角）</li>
+<li>甚至还折腾过 ComfyUI Workflow &#x2F; SD WebUI（一顿操作猛如虎，但最后得到了一片混沌）</li>
+</ul>
+<p><img src="https://i.imgur.com/esoruqH.jpeg" alt="generated-stuff"></p>
+<p>每一条路，几乎都走到了尽头。</p>
+<p>最后，我选择接受现实：</p>
+<p><strong>用 Pixellab 的 animate with text ，配合 Gemini 生成 prompt ，抽卡式递进。</strong></p>
+<p>尽管这不是最优解，但也是唯一让我能持续前进的解法。</p>
+<p>经过不停地抽卡、筛选，在所有素材生成完之后，还远没结束。</p>
+<p>用修图软件去白点、帧对齐、拼接、修边，也全部都要手工完成。</p>
+<h2 id="代码不是最难的，决定才是"><a href="#代码不是最难的，决定才是" class="headerlink" title="代码不是最难的，决定才是"></a>代码不是最难的，决定才是</h2><p>代码层面的问题，其实反而是“可解决的”。</p>
+<p>相机、物理、角色控制、连击系统、Boss 技能、AI 调度、UI、演出机制……</p>
+<p>每一个都很麻烦，也有很多细节问题要调，但只要花时间，都可以啃下来。</p>
+<p>真正让我反复犹豫的，是这些问题：</p>
+<ul>
+<li>要不要降低游戏难度，对新手更友好</li>
+<li>要不要加更多的小怪</li>
+<li>要不要加更多的游戏机制</li>
+<li>要不要加更多的 Boss 技能</li>
+<li>……</li>
+</ul>
+<p>后来我意识到：难的并不是去实现这些功能，而是我是否愿意为它们负责。</p>
+<p>不停地加元素，只会导致 Demo 的开发无限期地延长，很多作品就是因为这样而胎死腹中的。</p>
+<p>经过了一定的考虑，我总算制定好了 Demo v1.0 版本的完整 TODO List，一共将近 100 条，但也不是所有的都要在 1.0 版本完成，只需要完成有必要的，有的可选的点可以留到下一版再去实现。</p>
+<p><img src="https://i.imgur.com/V7A6pnA.jpeg" alt="todo-list"></p>
+<p>看着最后把这些勾全部打上，心中也是满满的成就感。</p>
+<h2 id="当-Demo-终于被正式发布了"><a href="#当-Demo-终于被正式发布了" class="headerlink" title="当 Demo 终于被正式发布了"></a>当 Demo 终于被正式发布了</h2><p><img src="https://i.imgur.com/1JXemZi.jpeg" alt="screenshot"></p>
+<p>2月10日，是该 Demo 的 Boss —— K 在原作游戏里的生日，我准备在这一天将 Demo 发布到社交平台。</p>
+<p>发布后的这一天，在平台引起了很多人的注目，评论和私信仿佛潮水似地朝我涌来：</p>
+<ul>
+<li>有人一眼就看出像《东方》《Rabi-Ribi》《TEVI》</li>
+<li>有人被 Boss 打到气哭</li>
+<li>有人打了十几次终于通关</li>
+<li>有人发现了游戏设计里的小彩蛋并为之称赞</li>
+<li>有人因为设备或网络原因只看完了游戏实机视频，说了句“音乐和文本非常用心”</li>
+</ul>
+<p>那一刻我才意识到：</p>
+<p><strong>它已经不完全属于我了。</strong></p>
+<p>我第一次同时站在了：</p>
+<p><strong>策划 &#x2F; 美术 &#x2F; 程序 &#x2F; 运营 &#x2F; 客服</strong>的位置上。</p>
+<p>回复私信、解决问题、解释设计，每一件事都很消耗精力，但也非常真实。</p>
+<p>但是，能和如此多的真实玩家相遇，并且能与少部分的人产生共鸣，我也觉得值了。</p>
+<p><img src="https://i.imgur.com/GEq8IL9.jpeg" alt="comment"></p>
+<h2 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h2><p>我不知道这个 Demo 最后会走向哪里。</p>
+<p>是否继续、是否扩展、是否真的会有下一个 Boss——</p>
+<p>这些我都没有答案。</p>
+<p>但我可以确认一件事：</p>
+<p><strong>我已经不会再怀疑“能不能做出来”这件事了。</strong></p>
+<p>接下来要面对的，不是技术问题，而是：</p>
+<p><strong>我是否愿意继续承担“作者”这个身份。</strong></p>
+<p>如果你愿意看到这里，谢谢你。</p>
+<p>不管你是开发者、玩家，还是单纯的围观者——</p>
+<p>这次 Demo 的意义，已经远远地超过了我最初的预期。</p>
+<p>我的 Demo 地址：<a target="_blank" rel="noopener" href="https://my-sekai-game.netlify.app/">https://my-sekai-game.netlify.app/</a></p>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:undefined">alphardex</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://alphardex.github.io/mygo/posts/11328/">https://alphardex.github.io/mygo/posts/11328/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="post-meta__tag-list"></div><div class="social-share pull-right"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script><nav id="pagination"><div class="next-post pull-right"><a href="/mygo/posts/21230/"><span>一个普通魔法师的 2025 年度总结</span><i class="fa fa-chevron-right"></i></a></div></nav><div id="vcomment"></div><script src="https://cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = 'false' == 'true';
+var verify = 'false' == 'true';
+var record_ip = 'false' == 'true';
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  recordIP:record_ip,
+  appId:'MUKqiaU6CnxOn2VeT4cUBLdG-gzGzoHsz',
+  appKey:'nxePlNHUgdOaABmHUoWz4TpR',
+  placeholder:'何が言いたいことがある？',
+  avatar:'mm',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang: 'zh-cn'
+})</script></div></div><footer class="footer-bg" style="background-image: url(https://s2.loli.net/2024/05/21/HtNjkzv1FEdAVby.jpg)"><div class="layout" id="footer"><div class="copyright">&copy;2019 - 2026 By alphardex</div><div class="framework-info"><span>Driven - </span><a target="_blank" rel="noopener" href="http://hexo.io"><span>Hexo</span></a><span class="footer-separator">|</span><span>Theme - </span><a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/hexo-theme-melody"><span>Melody</span></a></div><div class="footer_custom_text">hitokoto</div><div class="busuanzi"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><span id="busuanzi_container_page_pv"><i class="fa fa-file"></i><span id="busuanzi_value_page_pv"></span><span></span></span></div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><script src="https://cdn.jsdelivr.net/npm/animejs@latest/lib/anime.min.js"></script><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@latest/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-ui-pack@latest/velocity.ui.min.js"></script><script src="/mygo/js/utils.js?version=1.9.1"></script><script src="/mygo/js/fancybox.js?version=1.9.1"></script><script src="/mygo/js/sidebar.js?version=1.9.1"></script><script src="/mygo/js/copy.js?version=1.9.1"></script><script src="/mygo/js/fireworks.js?version=1.9.1"></script><script src="/mygo/js/transition.js?version=1.9.1"></script><script src="/mygo/js/scroll.js?version=1.9.1"></script><script src="/mygo/js/head.js?version=1.9.1"></script><script>if(/Android|webOS|iPhone|iPod|iPad|BlackBerry/i.test(navigator.userAgent)) {
+  $('#nav').addClass('is-mobile')
+  $('footer').addClass('is-mobile')
+  $('#top-container').addClass('is-mobile')
+}</script></body></html>
